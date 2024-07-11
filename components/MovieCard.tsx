@@ -59,30 +59,20 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
           w-full
           h-[12vw]
         " />
-        <div className="
-          z-10
-          bg-zinc-800
-          p-2
-          lg:p-4
-          absolute
-          w-full
-          transition
-          shadow-md
-          rounded-b-md
-          ">
+        <div className="absolute z-10 w-full p-2 transition shadow-md  bg-zinc-800 lg:p-4 rounded-b-md">
           <div className="flex flex-row items-center gap-3">
-            <div onClick={redirectToWatch} className="cursor-pointer w-6 h-6 lg:w-10 lg:h-10 bg-white rounded-full flex justify-center items-center transition hover:bg-neutral-300">
-              <PlayIcon className="text-black w-4 lg:w-6" />
+            <div onClick={redirectToWatch} className="flex items-center justify-center w-6 h-6 transition bg-white rounded-full cursor-pointer lg:w-10 lg:h-10 hover:bg-neutral-300">
+              <PlayIcon className="w-4 text-black lg:w-6" />
             </div>
             <FavoriteButton movieId={data.id} />
-            <div onClick={() => openModal(data?.id)} className="cursor-pointer ml-auto group/item w-6 h-6 lg:w-10 lg:h-10 border-white border-2 rounded-full flex justify-center items-center transition hover:border-neutral-300">
-              <ChevronDownIcon className="text-white group-hover/item:text-neutral-300 w-4 lg:w-6" />
+            <div onClick={() => openModal(data?.id)} className="flex items-center justify-center w-6 h-6 ml-auto transition border-2 border-white rounded-full cursor-pointer group/item lg:w-10 lg:h-10 hover:border-neutral-300">
+              <ChevronDownIcon className="w-4 text-white group-hover/item:text-neutral-300 lg:w-6" />
             </div>
           </div>
-          <p className="text-green-400 font-semibold mt-4">
+          <p className="mt-4 font-semibold text-green-400">
             New <span className="text-white">2023</span>
           </p>
-          <div className="flex flex-row mt-4 gap-2 items-center"> 
+          <div className="flex flex-row items-center gap-2 mt-4"> 
             <p className="text-white text-[10px] lg:text-sm">{data.duration}</p>
           </div>
           <div className="flex flex-row items-center gap-2 mt-4 text-[8px] text-white lg:text-sm">

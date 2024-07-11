@@ -71,7 +71,7 @@ const Auth = () => {
     <div className="relative h-full w-full bg-[url('/images/pxfuel.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="w-full h-full bg-black lg:bg-opacity-50">
         <nav className="px-12 py-5">
-          <p className='h-12 text-slate-50 font-serif text-[30px]'> AI-DUBGENIUS</p> 
+          <p className='h-12 text-slate-50 font-serif text-[30px]'> CLIPSYNC </p> 
         </nav>
         <div className="flex justify-center">
           <div className="self-center w-full px-16 py-16 mt-2 bg-black rounded-md bg-opacity-70 lg:w-2/5 lg:max-w-md">
@@ -115,7 +115,7 @@ const Auth = () => {
               </div>
             </div>
             <p className="mt-12 text-neutral-500">
-              {variant === 'login' ? 'First time using AI-DUBGENIUS?' : 'Already have an account?'}
+              {variant === 'login' ? 'First time using CLIPSYNC?' : 'Already have an account?'}
               <span onClick={toggleVariant} className="ml-1 text-white cursor-pointer hover:underline">
                 {variant === 'login' ? 'Create an account' : 'Login'}
               </span>

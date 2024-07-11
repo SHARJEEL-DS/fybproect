@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav className="fixed z-40 w-full">
       <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}`}>
         
-        <p className=' text-slate-50 font-serif h-4 lg:h-7 text-[30px]'> AI-DUBGENIUS</p>
+        <p className=' text-slate-50 font-serif h-4 lg:h-7 text-[30px]'> CLIPSYNC </p>
         <div className="flex-row hidden ml-8 gap-7 lg:flex">
           <a href='#home'>
           <p className='text-white'>Home</p>
